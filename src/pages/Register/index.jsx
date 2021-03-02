@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { UserOutlined, LockOutlined } from "@ant-design/icons";
+import { UserOutlined, LockOutlined, MailOutlined } from "@ant-design/icons";
 
-import { Form, Input, Button, Checkbox, Tooltip } from "antd";
+import { Form, Input, Button } from "antd";
 import "./style.scss";
 import { Link, NavLink } from "react-router-dom";
 Register.propTypes = {};
@@ -83,7 +83,7 @@ function Register(props) {
                                 },
                             ]}
                         >
-                            <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Email" />
+                            <Input prefix={<MailOutlined className="site-form-item-icon" />} placeholder="Email" />
                         </Form.Item>
                         <Form.Item
                             {...tailLayout}
